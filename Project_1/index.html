@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Collector's Cache - Redesigned Homepage</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <!-- Link to original site at the very top -->
+        <div class="original-link">
+            <p>Redesign of the original site: <a href="https://www.collectorscache.com/" target="_blank">https://www.collectorscache.com/</a></p>
+        </div>
+
+        <header>
+            <div class="header-container">
+                <!-- Logo/Title (left) -->
+                <div class="logo">
+                    <h1>Collector's Cache</h1>
+                    <p>Trading Card Games & Collectibles</p>
+                </div>
+
+                <!-- Search Bar (center or prominent) -->
+                <form class="search-form" action="#" method="get">
+                    <input 
+                        type="search" 
+                        name="q" 
+                        placeholder="Search store..." 
+                        aria-label="Search products"
+                        required
+                    >
+                    <button type="submit" aria-label="Search">
+                        Go
+                        <!-- Optional: Magnifying glass icon via Unicode or SVG -->
+                        <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 10.5L15 14M7 12C4.79086 12 3 10.2091 3 8C3 5.79086 4.79086 4 7 4C9.20914 4 11 5.79086 11 8C11 10.2091 9.20914 12 7 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> -->
+                    </button>
+                </form>
+
+                <!-- Optional right-side icons (cart, account) -->
+                <div class="header-icons">
+                    <a href="#" aria-label="Cart">🛒 Cart</a>
+                    <a href="#" aria-label="Account">👤 Account</a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <!-- Hidden checkbox for toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+            <!-- Hamburger label/icon (visible only on mobile) -->
+            <label for="nav-toggle" class="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </label>
+
+            <!-- The actual menu list -->
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Buylist</a></li>
+                <li><a href="#">Preorders</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Clearance</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero / Welcome section -->
+        <section class="hero">
+            <h2>Welcome to the Redesigned Collector's Cache</h2>
+            <p>Discover the latest TCG products, exclusive deals, and collectibles from our trusted store (est. 1988).</p>
+            <!-- You could add placeholder for a hero image later if you want -->
+        </section>
+
+        <section class="game-categories">
+            <!-- 1. Pokémon -->
+            <div class="game-box">
+                <div class="game-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Pok%C3%A9mon_Trading_Card_Game_logo.svg" 
+                        alt="Pokémon Trading Card Game Logo">
+                </div>
+                <div class="game-links">
+                    <a href="#">Pokémon Card Singles</a>
+                    <a href="#">Pokémon Sealed Products</a>
+                </div>
+            </div>
+
+            <!-- 2. Magic: The Gathering -->
+            <div class="game-box">
+                <div class="game-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Magicthegathering-logo.svg" 
+                        alt="Magic: The Gathering Logo">
+                </div>
+                <div class="game-links">
+                    <a href="#">MTG Singles</a>
+                    <a href="#">MTG Sealed Products</a>
+                </div>
+            </div>
+
+            <!-- 3. Yu-Gi-Oh! -->
+            <div class="game-box">
+                <div class="game-logo">
+                    <!-- Yu-Gi-Oh! logos are trickier for clean SVG; using a placeholder/text fallback. Replace if you find a good one -->
+                    <h3 style="font-size: 2rem; margin: 0; color: #000;">Yu-Gi-Oh!</h3> <!-- Or find SVG on brandfetch.com/yugioh-card.com -->
+                </div>
+                <div class="game-links">
+                    <a href="#">Yu-Gi-Oh! Singles</a>
+                    <a href="#">Yu-Gi-Oh! Sealed Products</a>
+                </div>
+            </div>
+
+            <!-- 4. Disney Lorcana -->
+            <div class="game-box">
+                <div class="game-logo">
+                    <!-- Lorcana logo SVG not freely available in searches; use text or find on brandfetch.com/disneylorcana.com -->
+                    <h3 style="font-size: 2rem; margin: 0; color: #0066cc;">Disney Lorcana</h3>
+                </div>
+                <div class="game-links">
+                    <a href="#">Lorcana Singles</a>
+                    <a href="#">Lorcana Sealed Products</a>
+                </div>
+            </div>
+
+            <!-- 5. One Piece Card Game -->
+            <div class="game-box">
+                <div class="game-logo">
+                    <!-- Use text or source from brandfetch.com/onepiece-cardgame.com -->
+                    <h3 style="font-size: 2rem; margin: 0; color: #c41e3a;">One Piece Card Game</h3>
+                </div>
+                <div class="game-links">
+                    <a href="#">One Piece Singles</a>
+                    <a href="#">One Piece Sealed Products</a>
+                </div>
+            </div>
+
+            <!-- 6. Final Fantasy (TCG/MTG crossover focus) -->
+            <div class="game-box">
+                <div class="game-logo">
+                    <!-- Text fallback; FF TCG logos are niche -->
+                    <h3 style="font-size: 2rem; margin: 0; color: #4a148c;">Final Fantasy TCG</h3>
+                </div>
+                <div class="game-links">
+                    <a href="#">Final Fantasy Singles</a>
+                    <a href="#">Final Fantasy Sealed Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main featured deals section (prominent on original site) -->
+        <section>
+            <h2>Featured Deals & Blowout Sales</h2>
+            <div class="deals-grid">
+                <article>
+                    <h3>Star Wars: Unlimited - Jump to Lightspeed Booster Box</h3>
+                    <p>Now $49.99 (Save 58%)</p>
+                    <p>High demand pre-order item!</p>
+                </article>
+                <article>
+                    <h3>Pokémon Mega Charizard X Playmat</h3>
+                    <p>Only $12.99 (Save 48%)</p>
+                </article>
+                <article>
+                    <h3>MTG Marvel's Spider-Man PLAY Booster Box</h3>
+                    <p>$99.99 (Save 52%)</p>
+                </article>
+                <!-- Add 3-5 more similar article blocks based on current hot items -->
+            </div>
+        </section>
+
+        <!-- New Releases / Pre-Orders side-by-side or stacked -->
+        <section style="display: flex; gap: 2rem; flex-wrap: wrap;">
+            <div style="flex: 1;">
+                <h2>New Releases</h2>
+                <article>
+                    <h3>Digimon Card Game - EX11 Dawn of Liberator Booster Box</h3>
+                    <p>$109.99 (New drop!)</p>
+                </article>
+                <!-- Add more -->
+            </div>
+            <div style="flex: 1;">
+                <h2>Upcoming Pre-Orders</h2>
+                <article>
+                    <h3>Yu-Gi-Oh 2025 Mega-Pack Bundle</h3>
+                    <p>Pre-order now for $14.99</p>
+                </article>
+                <!-- Add more -->
+            </div>
+        </section>
+
+        <!-- Aside: e.g., quick links, newsletter, or store info -->
+        <aside>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Shop by Game</a></li>
+                <li><a href="#">Clearance</a></li>
+                <li><a href="#">Contact / Store Location</a></li>
+                <li>Sign up for deals newsletter</li>
+            </ul>
+            <p>Visit our physical store in Lenexa, KS!</p>
+        </aside>
+
+        <footer>
+            <p>&copy; 2026 Collector's Cache Redesign Project | <a href="https://www.collectorscache.com/">Original Site</a></p>
+            <p>For educational purposes only.</p>
+        </footer>
+
+    </body>
+</html>
